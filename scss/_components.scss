@@ -1,0 +1,149 @@
+.header-search-box {
+  background-color: $color-dark;
+  width: 900px;
+  height: 120px;
+  border: 1px solid $color-secondary;
+  margin: auto;
+  margin-bottom: 120px;
+
+  .search-area {
+    justify-content: space-between;
+    display: flex;
+    direction: rtl;
+    width: 700px;
+    height: 92px;
+    margin: auto;
+    padding: 15px;
+
+    input {
+      width: 130px;
+    }
+
+    &-box {
+      background-color: $color-primary;
+      color: $color-black;
+      height: 60px;
+      border-radius: 4px;
+      border: 1px solid $color-secondary;
+      padding: 20px 16px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    &-btn {
+      width: 130px;
+      color: $color-primary;
+      background-color: $color-secondary;
+      border: 1px solid $color-secondary;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        color: $color-primary;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.main-header {
+  padding: 60px;
+  text-align: center;
+  background-color: $color-primary;
+
+  .text-color {
+    color: $color-secondary;
+  }
+
+  &-title {
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+
+  &-sub {
+    color: rgb(54, 51, 51);
+    font-weight: 800;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.restaurant {
+  width: 100%;
+  padding: 95px 0px;
+  background-color: $color-primary;
+
+  &-food {
+    width: 950px;
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+
+    a {
+      margin-bottom: 20px;
+      transition: 0.6s;
+      position: relative;
+
+      &:hover {
+        transform: translateY(-5px);
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.popular {
+  padding: 50px 85px;
+  direction: rtl;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-color: $color-primary;
+
+  &-section {
+    width: 1270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    &-right {
+      align-items: center;
+      width: 50%;
+
+      &-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      &-sub {
+        color: $color-third;
+        font-size: 15px;
+        margin-bottom: 35px;
+      }
+
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+          position: relative;
+          margin-bottom: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    &-left {
+      width: 50%;
+      display: flex;
+      // justify-content: flex-start;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}

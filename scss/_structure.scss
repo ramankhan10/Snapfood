@@ -1,0 +1,29 @@
+$color-primary: #f7f7f7;
+$color-secondary: #ec0c6d;
+$color-third: #9f9f9f;
+$color-dark: #3d3b3b;
+$color-black: #000;
+
+$font-Sahel: Sahel, Tahoma;
+
+@font-face {
+  font-family: Sahel;
+  src: url("/fonts/Sahel.eot") format("eot"),
+    url("/fonts/Sahel.ttf") format("ttf");
+  font-weight: normal;
+}
+
+.text-color {
+  color: $color-secondary;
+}
+
+body {
+  background-color: $color-third;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-Sahel;
+}
